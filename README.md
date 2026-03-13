@@ -46,3 +46,23 @@ Patient 11 → Doctor DrB (available at 16 min)
 Final patient distribution:
   Doctor DrB: 4 patients [2, 4, 6, 9] → finishes at 16 min
   Doctor DrA: 6 patients [1, 3, 5, 7, 8, 10] → finishes at 18 min
+
+
+
+## Algorithm Explanation
+Approach: Greedy Algorithm
+The algorithm uses a greedy strategy that assigns each patient to the doctor who will be available soonest. This approach:
+
+Maintains doctor availability: Tracks when each doctor will finish with their current patient
+Assigns optimally: For each new patient, finds the doctor who will be free earliest
+Handles tie-breaking: When multiple doctors are equally available, prefers the one with shorter consultation time
+Returns waiting time: For the target patient, returns the time when they will be called (when a doctor becomes available)
+
+# Time Complexity
+O(n × d × log d) where:
+n = patient position in queue
+d = number of doctors
+Sorting happens for each patient assignment
+
+# Space Complexity
+O(d) for tracking doctor availability
