@@ -1,13 +1,12 @@
-# waitingtime-patient
-=== Test Case 1: Case Study 1 ===
+### Test Case 1: Case Study 1 /n
 John's waiting time: 15 minutes
 Expected: 15 minutes
 
-=== Test Case 2: Case Study 2, Question 1 ===
+### Test Case 2: Case Study 2, Question 1 n/
 John's waiting time: 16 minutes
 Note: Greedy algorithm result
 
-=== Test Case 3: Multiple doctors with same consultation time ===
+# Test Case 3: Multiple doctors with same consultation time n/
 Patient 10's waiting time: 15 minutes
 Expected: 15 minutes (9 patients / 3 doctors = 3 patients each, 3 * 5 = 15)
 
@@ -24,10 +23,7 @@ Patient 7's waiting time: 6 minutes
 Expected: Fast doctor gets more patients due to shorter time
 
 
-============================================================
-DETAILED TRACE EXAMPLE
-============================================================
-
+##  DETAILED TRACE EXAMPLE
 === Assignment Trace ===
 Patient 1 → Doctor DrA (available at 0 min)
 Patient 2 → Doctor DrB (available at 0 min)
